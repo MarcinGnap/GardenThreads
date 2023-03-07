@@ -20,7 +20,7 @@ int main() {
 		firstThreads.push_back(thread(hello, i));
 		firstThreads[i].join();
 	}
-
+	// w jednej pêtli wykonanie i join bo mamy jeden output i by³by "gnój" na wyjœciu
 
 	cout << "Hello there \nGeneral Kenobi... \nThis is main thread" << endl;
 
