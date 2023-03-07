@@ -1,5 +1,10 @@
 #include "Plant.h"
 
+Plant::Plant()
+{
+	statusEmpty();
+}
+
 char Plant::statusEmpty()
 {
 	cPlantStatus = 'e';

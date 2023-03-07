@@ -4,6 +4,7 @@
 class Plant
 {
 public:
+	Plant();
 	char statusEmpty();
 	char statusPlanted();
 	char statusFertilized();

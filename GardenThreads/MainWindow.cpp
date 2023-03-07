@@ -14,6 +14,7 @@ MainWindow::MainWindow() {
 	iProducts = 10;
 	iPlants = 20;
 	iMoney = 0;
+	iFreeTools = iTools;
 }
 
 void MainWindow::simulate() {
@@ -42,16 +43,19 @@ void MainWindow::showInfo() {
 	mtx.lock();
 
 	for (int g = 0; g < iGardens; g++) {
-		cout << "Garden: " << g + 1 << endl;
-		cout << "Number of gardeners: " << iGardeners << endl;
-		cout << "Number of trucks: " << iTrucks << endl;
-		cout << "Number of clients: " << iClients << endl;
-		cout << "Number of plants: " << iPlants << endl;
-		cout << "Number of tools: " << iTools<< endl;
-		cout << "Number of bags of fertilizer: " << iFertilizer << endl;
-		cout << "Number of available products: " << iProducts << endl;
+		cout << "Garden: " << g + 1 << endl << endl;
+		cout << "Gardeners: " << iGardeners << endl;
+		cout << "Trucks: " << iTrucks << endl;
+		cout << "Clients: " << iClients << endl;
+		cout << "Plants: " << iPlants << endl;
+		cout << "\tEmpty spot: " << iEmptyPlants << "\n \tFreshly planted: " << iPlantedPlants << "\n \tFertilized plant: " << iFertilizedPlants << "\n \tTrimmed plant: " << iTrimmedPlants << endl;
+		cout << "Tools: " << iTools<< endl;
+		cout << "\tFree: " << iFreeTools << "\n \tOccupied: " << iTools - iFreeTools << endl;
+		cout << "Bags of fertilizer: " << iFertilizer << endl;
+		cout << "Available products: " << iProducts << endl << endl;
+		cout << "Money earned: " << iMoney << endl << endl;
 	}
 
-	// waitin for btn
+	// waitin for btn or has to refresh automatically
 	mtx.unlock();
 }
