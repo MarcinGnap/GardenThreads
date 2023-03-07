@@ -123,16 +123,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Fertilizer.cpp" />
+    <ClCompile Include="Garden.cpp" />
     <ClCompile Include="Gardener.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="Plant.cpp" />
+    <ClCompile Include="Product.cpp" />
     <ClCompile Include="Tool.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Fertilizer.h" />
+    <ClInclude Include="Garden.h" />
     <ClInclude Include="Gardener.h" />
     <ClInclude Include="MainWindow.h" />
     <ClInclude Include="Plant.h" />
+    <ClInclude Include="Product.h" />
     <ClInclude Include="Tool.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
