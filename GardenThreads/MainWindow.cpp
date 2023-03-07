@@ -1,5 +1,6 @@
 #include "MainWindow.h"
 #include <thread>
+#include <vector>
 #include <iostream>
 
 using namespace std;
@@ -17,8 +18,17 @@ MainWindow::MainWindow() {
 	iFreeTools = iTools;
 }
 
-void MainWindow::simulate() {
+void MainWindow::setData()
+{
 
+}
+
+void MainWindow::simulate() {
+	thread *vtTrucks = new thread[iTrucks];
+	for (int t1 = 0; t1 < iTrucks; t1++) {
+		
+	}
+	//thread tTrucks[iTrucks];
 }
 
 void MainWindow::startGardenThread(){
@@ -59,3 +69,4 @@ void MainWindow::showInfo() {
 	// waitin for btn or has to refresh automatically
 	mtx.unlock();
 }
+

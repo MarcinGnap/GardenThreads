@@ -21,5 +21,5 @@ private:
 	void startClientThread();
 	void startTruckThread();
 	void showInfo();
+	void setData();
 };
-
